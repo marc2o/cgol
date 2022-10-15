@@ -1,0 +1,18 @@
+[package]
+name = "cgol"
+version = "0.1.0"
+edition = "2021"
+authors = ["Marc Oliver Orth <orth.marcoliver@gmail.com>"]
+description = "A small SDL2 game."
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[features]
+default=[]
+use_sdl2_mac_framework=["sdl2/use_mac_framework"]
+
+[dependencies.sdl2]
+version="*"
+default-features=false
